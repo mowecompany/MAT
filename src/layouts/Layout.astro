@@ -10,17 +10,47 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<link rel="icon" href="logomat1.svg" type="image/x-icon" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<slot />
 	</body>
 </html>
 <style is:global>
+	/* Barra de desplazamiento transparente */
+	body {
+		overflow-y: auto; /* Mantiene la barra vertical */
+		height: 10vh; /* Asegura que la barra de desplazamiento se muestre en toda la altura de la ventana */
+	}
+
+	/* Personalización de la barra de desplazamiento */
+	::-webkit-scrollbar {
+		width: 8px; /* Ancho de la barra */
+		height: 8px; /* Altura de la barra horizontal (si se muestra) */
+	}
+
+	::-webkit-scrollbar-thumb {
+		background-color: rgba(
+			0,
+			0,
+			0,
+			0.3
+		); /* Color semi-transparente del "thumb" */
+		border-radius: 10px; /* Bordes redondeados */
+	}
+
 	:root {
 		--accent: 136, 58, 234;
 		--accent-light: 224, 204, 250;
