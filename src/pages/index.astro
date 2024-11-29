@@ -21,18 +21,17 @@ import Layout from "../layouts/Layout.astro";
         </div>
     </header>
 
-	<section
-    class="pb-80 bg-cover bg-center mb-8 mt-8 ms-8 mr-8 rounded-2xl"
-    style="background-image: url('/MAT/portada.svg'); height: 73vh;"
->
-    <div class="text-white text-center py-40">
-        <h2 class="text-4xl la-belle-aurore-regular">MAT COMPANY</h2>
-        <p class="text-lg">
-            Comercio, accesibilidad y tecnología en un solo lugar.
-        </p>
-    </div>
-</section>
-
+    <section
+        class="pb-80 bg-cover bg-center mb-8 mt-8 ms-8 mr-8 rounded-2xl"
+        style="background-image: url('/MAT/portada.svg'); height: 73vh;"
+    >
+        <div class="text-white text-center py-48">
+            <h2 class="text-4xl la-belle-aurore-regular">MAT COMPANY</h2>
+            <p class="text-lg mt-4">
+                Comercio, accesibilidad y tecnología en un solo lugar.
+            </p>
+        </div>
+    </section>
 
     <!--btn Únete a MAT  -->
     <div class="cta-container">
@@ -218,7 +217,7 @@ import Layout from "../layouts/Layout.astro";
                             loading="lazy"
                         />
                         <img
-                            src="iconotelefono.svg"
+                            src="/MAT/iconotelefono.svg"
                             alt="Teléfono"
                             class="w-4 h-4 mr-2"
                             loading="lazy"
@@ -249,13 +248,13 @@ import Layout from "../layouts/Layout.astro";
                         loading="lazy"
                     />
                     <img
-                        src="logoinstagram.svg"
+                        src="/MAT/logoinstagram.svg"
                         alt="Instagram de MAT"
                         class="w-6 h-6"
                         loading="lazy"
                     />
                     <img
-                        src="logox.svg"
+                        src="/MAT/logox.svg"
                         alt="Twitter de MAT"
                         class="w-6 h-6"
                         loading="lazy"
@@ -276,7 +275,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <!-- Logo en la esquina inferior izquierda -->
-        <div class="absolute bottom-4 left-6">
+        <div class="absolute bottom-20 left-6">
             <img
                 src="/MAT/logomat.svg"
                 alt="Logo de MAT"
@@ -286,7 +285,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <!-- Logo en la esquina inferior derecha -->
-        <div class="absolute bottom-4 right-6">
+        <div class="absolute bottom-20 right-6">
             <img
                 src="/MAT/logomat.svg"
                 alt="Logo de MAT"
@@ -298,8 +297,8 @@ import Layout from "../layouts/Layout.astro";
         <!-- Derechos reservados -->
         <div class="text-center mt-8 text-sm text-gray-400">
             © 2024 MAT Company ·
-            <a href="/terms" class="hover:underline">Términos y condiciones</a> ·
-            <a href="/privacy-policy" class="hover:underline"
+            <a href="/MAT/terms" class="hover:underline">Términos y condiciones</a> ·
+            <a href="/MAT/privacy-policy" class="hover:underline"
                 >Política de privacidad</a
             >
         </div>
@@ -311,12 +310,6 @@ import Layout from "../layouts/Layout.astro";
         font-family: "La Belle Aurore", cursive;
         font-weight: 400;
         font-style: normal;
-    }
-
-    .parallax {
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
     }
 
     .cta-container {
@@ -334,8 +327,5 @@ import Layout from "../layouts/Layout.astro";
         cursor: pointer;
         transform: scale(1);
         transition: transform 0.3s ease;
-    }
-    .cta-btn:hover {
-        transform: scale(1.1);
     }
 </style>
